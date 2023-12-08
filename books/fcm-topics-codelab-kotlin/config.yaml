@@ -1,0 +1,11 @@
+title: "Kotlin+SpringBootで学ぶFCM入門"
+summary: ""
+topics: ["android", "firebase", "springboot", "kotlin", "個人開発"]
+published: false
+price: 0 # 有料の場合200〜5000
+# 本に含めるチャプターを順番に並べましょう
+chapters:
+  - get-setup
+  - build-and-run
+  - send-to-registration-token
+  - send-to-topic
