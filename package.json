@@ -1,0 +1,11 @@
+{
+  "name": "zenn-docs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/CASL0/zenn-docs.git",
+  "author": "CASL0 <gin.0046.822@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "zenn-cli": "^0.1.150"
+  }
+}
