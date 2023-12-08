@@ -1,0 +1,28 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/javascript-node
+{
+  "name": "Zenn Docs",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-20-bullseye",
+  "forwardPorts": [
+    8000
+  ],
+  "workspaceMount": "source=${localWorkspaceFolder},target=/opt/zenn-docs,type=bind,consistency=delegated",
+  "workspaceFolder": "/opt/zenn-docs",
+  "postCreateCommand": "yarn install",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "yzhang.markdown-all-in-one",
+        "EditorConfig.EditorConfig",
+        "esbenp.prettier-vscode"
+      ],
+      "settings": {
+        "editor.tabSize": 2,
+        "editor.formatOnType": true,
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+      }
+    }
+  }
+}
