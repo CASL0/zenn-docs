@@ -1,5 +1,23 @@
-title: "Kotlin+SpringBootで学ぶFCM入門"
-summary: ""
+title: "Kotlin+Android+SpringBootで学ぶFCM入門"
+summary: |-
+  モバイルアプリにおいてプッシュ通知は中心的な役割を果たしています。
+
+  本書では次のようなプッシュ通知の基礎的な内容を学ぶことができます。
+  - Android アプリから受信したいトピックを購読/購読解除する方法。
+  - 登録トークンを指定し、特定のデバイスにプッシュ通知を送信する方法。
+  - トピックを指定し、同トピックを購読しているデバイスにプッシュ通知を送信する方法。
+  - トピック条件を指定し、条件を満たすデバイスにプッシュ通知を送信する方法。
+
+  本書のソースコード全文は次のリポジトリにあります。
+  - https://github.com/CASL0/fcm-topics-codelab-kotlin
+
+  本書はGoogleのコードラボ「FCM トピックを使用した最初のマルチキャストプッシュメッセージ」に大きく影響を受けています。
+  - https://firebase.google.com/codelabs/firebase-fcm-topics?hl=ja
+
+  同コードラボではコードベースがJavaであるため、本書では次のように技術スタックを変更しています。
+  - アプリ側：Java + AndroidView → Kotlin + Jetpack Compose
+  - サーバー側：プッシュ通知をトリガーしてプロセスを終了するJavaアプリケーション → SpringBootでAPIを作成し、プッシュ通知をトリガーするサーバーアプリ。
+
 topics: ["android", "firebase", "springboot", "kotlin", "個人開発"]
 published: false
 price: 0 # 有料の場合200〜5000
