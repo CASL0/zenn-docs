@@ -19,7 +19,7 @@ summary: |-
   - サーバー側：プッシュ通知をトリガーしてプロセスを終了するJavaアプリケーション → SpringBootでAPIを作成し、プッシュ通知をトリガーするサーバーアプリ。
 
 topics: ["android", "firebase", "springboot", "kotlin", "個人開発"]
-published: false
+published: true
 price: 0 # 有料の場合200〜5000
 # 本に含めるチャプターを順番に並べましょう
 chapters:
