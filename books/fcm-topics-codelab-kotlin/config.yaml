@@ -8,4 +8,5 @@ chapters:
   - get-setup
   - build-and-run
   - send-to-registration-token
+  - subscribe-topic
   - send-to-topic
