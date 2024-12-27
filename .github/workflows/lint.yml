@@ -1,0 +1,20 @@
+---
+name: Lint
+
+on:
+  push:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Markdown Lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Run Lint
+        uses: DavidAnson/markdownlint-cli2-action@v18
+        with:
+          globs: "**/*.md"
