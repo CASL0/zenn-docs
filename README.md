@@ -23,3 +23,11 @@ npx zenn new:book
 ```sh
 npx zenn preview
 ```
+
+## Contributing
+
+[husky](https://github.com/typicode/husky)の pre-commit を設定してください。
+
+```sh
+yarn prepare
+```
