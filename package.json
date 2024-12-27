@@ -12,5 +12,11 @@
     "husky": "^9.1.7",
     "lint-staged": "^15.2.11",
     "markdownlint-cli2": "^0.17.0"
+  },
+  "scripts": {
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "**/*.md": "markdownlint-cli2"
   }
 }
