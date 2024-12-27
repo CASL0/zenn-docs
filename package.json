@@ -7,5 +7,10 @@
   "license": "MIT",
   "dependencies": {
     "zenn-cli": "^0.1.150"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.11",
+    "markdownlint-cli2": "^0.17.0"
   }
 }
