@@ -2,15 +2,15 @@
 title: "特定の端末へプッシュ通知を送信する"
 ---
 
-# スターターサーバーの構成
+## スターターサーバーの構成
 
 サーバーアプリは以下のエンドポイントを含んでいます。
 
-- POST http://localhost:8090/api/v1/tokens/{token}/messages
+- `POST http://localhost:8090/api/v1/tokens/{token}/messages`
   - FCM 登録トークンを指定し、当該端末へプッシュ通知を送信します。
-- POST http://localhost:8090/api/v1/topics/{topic}/messages
+- `POST http://localhost:8090/api/v1/topics/{topic}/messages`
   - トピックを指定し、同トピックを購読している端末にプッシュ通知を送信します。
-- POST http://localhost:8090/api/v1/messages
+- `POST http://localhost:8090/api/v1/messages`
   - トピック条件を指定し、条件を満たす端末にプッシュ通知を送信します。
   - `X-Topic-Condition`ヘッダにトピック条件を指定します（例：`'Technology' in topics || 'Automotive' in topics`）
 
@@ -28,7 +28,7 @@ title: "特定の端末へプッシュ通知を送信する"
   - `sendMessageToFcmTopicCondition`: トピック条件を指定し、条件を満たす端末にプッシュ通知を送信します。
     - スターターコードではプレースホルダーとなっています。（後に実装します）
 
-# サービスアカウントを設定する
+## サービスアカウントを設定する
 
 firebase-admin SDK が FCM API の呼び出しを認証できるようにサービスアカウントを次の手順でセットアップします。
 
@@ -36,7 +36,7 @@ firebase-admin SDK が FCM API の呼び出しを認証できるようにサー�
 2. [プロジェクトの概要 ⚙]>[プロジェクトの設定]>[サービスアカウント]>[新しい秘密鍵を生成]をクリックし、キーファイルをダウンロードします。
 3. ダウンロードしたファイルを`service-account.json`にリネームし、`StockNewsServer/src/main/resources`に配置します。
 
-# 登録トークンを指定して端末へプッシュ通知を送信する
+## 登録トークンを指定して端末へプッシュ通知を送信する
 
 [StockNewsServer](https://github.com/CASL0/fcm-topics-codelab-kotlin/tree/main/StockNewsServer)を IntelliJ IDEA で開き、[Run▷]をクリックしサーバーを起動してください。
 
@@ -57,4 +57,4 @@ Android アプリがフォアグラウンドにある場合は logcat に以下�
 
 Android アプリがバックグラウンドにある場合は通知が表示されます。
 
-![](https://storage.googleapis.com/zenn-user-upload/8d96c9954fbc-20231209.png)
+![プッシュ通知](https://storage.googleapis.com/zenn-user-upload/8d96c9954fbc-20231209.png)
