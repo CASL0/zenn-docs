@@ -3,12 +3,10 @@
 {
   "name": "Zenn Docs",
   "image": "mcr.microsoft.com/devcontainers/javascript-node:1-20-bullseye",
-  "forwardPorts": [
-    8000
-  ],
+  "forwardPorts": [8000],
   "workspaceMount": "source=${localWorkspaceFolder},target=/opt/zenn-docs,type=bind,consistency=delegated",
   "workspaceFolder": "/opt/zenn-docs",
-  "postCreateCommand": "yarn install",
+  "postCreateCommand": "yarn install && yarn prepare",
   "customizations": {
     "vscode": {
       "extensions": [
