@@ -12,7 +12,8 @@ title: "特定の端末へプッシュ通知を送信する"
   - トピックを指定し、同トピックを購読している端末にプッシュ通知を送信します。
 - `POST http://localhost:8090/api/v1/messages`
   - トピック条件を指定し、条件を満たす端末にプッシュ通知を送信します。
-  - `X-Topic-Condition`ヘッダにトピック条件を指定します（例：`'Technology' in topics || 'Automotive' in topics`）
+  - `X-Topic-Condition`ヘッダにトピック条件を指定します
+    （例：`'Technology' in topics || 'Automotive' in topics`）
 
 主なコード
 
@@ -38,7 +39,8 @@ firebase-admin SDK が FCM API の呼び出しを認証できるようにサー�
 
 ## 登録トークンを指定して端末へプッシュ通知を送信する
 
-[StockNewsServer](https://github.com/CASL0/fcm-topics-codelab-kotlin/tree/main/StockNewsServer)を IntelliJ IDEA で開き、[Run▷]をクリックしサーバーを起動してください。
+[StockNewsServer](https://github.com/CASL0/fcm-topics-codelab-kotlin/tree/main/StockNewsServer)を
+IntelliJ IDEA で開き、[Run▷]をクリックしサーバーを起動してください。
 
 Android アプリのログに出力されていた登録トークンを確認し、以下のコマンドで API をリクエストします。
 
@@ -53,7 +55,9 @@ curl --location 'http://localhost:8090/api/v1/tokens/[tokenを貼り付けてく
 
 Android アプリがフォアグラウンドにある場合は logcat に以下のログが出力されます。
 
-- `Notification received with data-payload {}, title テストメッセージ, body 特定の端末へプッシュ通知を送信する - テスト`
+```text
+Notification received with data-payload {}, title テストメッセージ, body 特定の端末へプッシュ通知を送信する - テスト
+```
 
 Android アプリがバックグラウンドにある場合は通知が表示されます。
 
