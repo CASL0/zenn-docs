@@ -31,3 +31,12 @@ npx zenn preview
 ```sh
 yarn prepare
 ```
+
+### markdownlint の設定
+
+既定値からの変更点を記載します。
+
+#### MD013
+
+1. `code_blocks`を false に変更
+   - 理由：短い行が適さない言語があるため
