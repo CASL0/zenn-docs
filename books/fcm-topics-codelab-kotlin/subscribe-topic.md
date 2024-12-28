@@ -12,7 +12,8 @@ Android アプリ側で購読したいトピックを切り替える方法を実
 
 `MainViewModel.kt`を開いてください。トグル切り替え時のイベントハンドラ内で呼び出される`subscribeToStockCategory`メソッドがプレースホルダーとなっているので、実装していきます。
 
-[subscribeToTopic](<https://firebase.google.com/docs/reference/android/com/google/firebase/messaging/FirebaseMessaging?hl=ja#subscribeToTopic(java.lang.String)>) API を使用し、次のコードのように実装します。
+[subscribeToTopic](<https://firebase.google.com/docs/reference/android/com/google/firebase/messaging/FirebaseMessaging?hl=ja#subscribeToTopic(java.lang.String)>)
+API を使用し、次のコードのように実装します。
 
 ```kotlin
 FirebaseMessaging.getInstance().subscribeToTopic(topicName.toString())
@@ -28,7 +29,8 @@ FirebaseMessaging.getInstance().subscribeToTopic(topicName.toString())
 
 また、トグル切り替え時のイベントハンドラ内で呼び出され、購読解除を行う`unsubscribeFromStockCategory`メソッドを実装していきます。
 
-[unsubscribeFromTopic](https://firebase.google.com/docs/reference/android/com/google/firebase/messaging/FirebaseMessaging?hl=ja#public-taskvoid-unsubscribefromtopic-string-topic) API を使用し、次のコードのように実装します。
+[unsubscribeFromTopic](https://firebase.google.com/docs/reference/android/com/google/firebase/messaging/FirebaseMessaging?hl=ja#public-taskvoid-unsubscribefromtopic-string-topic)
+API を使用し、次のコードのように実装します。
 
 ```kotlin
 FirebaseMessaging.getInstance().unsubscribeFromTopic(topicName.toString())
