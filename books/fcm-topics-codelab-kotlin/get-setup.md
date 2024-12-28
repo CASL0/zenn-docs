@@ -41,7 +41,8 @@ IDE でプロジェクトを開いてください。
    ![アプリ追加](https://storage.googleapis.com/zenn-user-upload/8d0141bd2f66-20231127.png)
 3. 以下の値を入力します。
 
-   - Android パッケージ名：io.github.casl0.stocknews（`StockNewsApp/app/build.gradle.kts`の applicationId）
+   - Android パッケージ名：io.github.casl0.stocknews
+     （`StockNewsApp/app/build.gradle.kts`の applicationId）
    - アプリのニックネーム：空欄
    - デバッグ署名証明書 SHA-1：空欄
      ![アプリの登録](https://storage.googleapis.com/zenn-user-upload/c7533bfb0760-20231127.png)
