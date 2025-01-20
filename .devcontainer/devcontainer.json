@@ -12,7 +12,9 @@
       "extensions": [
         "yzhang.markdown-all-in-one",
         "EditorConfig.EditorConfig",
-        "esbenp.prettier-vscode"
+        "esbenp.prettier-vscode",
+        "vivaxy.vscode-conventional-commits",
+        "streetsidesoftware.code-spell-checker"
       ],
       "settings": {
         "editor.tabSize": 2,
