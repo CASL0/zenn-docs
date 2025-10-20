@@ -6,7 +6,7 @@
   "author": "CASL0 <gin.0046.822@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "zenn-cli": "^0.2.3"
+    "zenn-cli": "^0.2.4"
   },
   "devDependencies": {
     "husky": "^9.1.7",
