@@ -1260,10 +1260,10 @@ yaml@^2.9.0:
   resolved "https://registry.yarnpkg.com/yaml/-/yaml-2.9.0.tgz#78274afd93598a1dfdd6130df6a566defcbf9aa4"
   integrity sha512-2AvhNX3mb8zd6Zy7INTtSpl1F15HW6Wnqj0srWlkKLcpYl/gMIMJiyuGq2KeI2YFxUPjdlB+3Lc10seMLtL4cA==
 
-zenn-cli@^0.5.3:
-  version "0.5.3"
-  resolved "https://registry.yarnpkg.com/zenn-cli/-/zenn-cli-0.5.3.tgz#76b22a3abe8f8c3601a54555e8a0dccb4b977967"
-  integrity sha512-WcIf3PlZNnrR/NjGbEnwv3CQGpeLfuIFFKxT+U1BosHTvD3bCm7OxCRHd6UDl103ZTp8ZEpICcFdJzE5rGxT8A==
+zenn-cli@^0.5.4:
+  version "0.5.4"
+  resolved "https://registry.yarnpkg.com/zenn-cli/-/zenn-cli-0.5.4.tgz#764b0834f56a360312693cd697083a2af9656437"
+  integrity sha512-YqoGZa7xhJ0Wx9ZomPBuVeKhnbkb5HYHtnzEg0xP2L1U43hUMwi0xRWjO5+zIlq8yBlumkMo5WfhT5BStL3zAQ==
   dependencies:
     "@ai-sdk/fireworks" "^3.0.23"
     "@ai-sdk/openai" "^4.0.28"
