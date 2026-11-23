@@ -2057,25 +2057,25 @@ markdownlint-cli2-formatter-default@0.0.6:
   resolved "https://registry.yarnpkg.com/markdownlint-cli2-formatter-default/-/markdownlint-cli2-formatter-default-0.0.6.tgz#aa6db33b2fafc0801f4bbddeedafc19a2499a62c"
   integrity sha512-VVDGKsq9sgzu378swJ0fcHfSicUnMxnL8gnLm/Q4J/xsNJ4e5bA6lvAz7PCzIl0/No0lHyaWdqVD2jotxOSFMQ==
 
-markdownlint-cli2@^0.24.1:
-  version "0.24.1"
-  resolved "https://registry.yarnpkg.com/markdownlint-cli2/-/markdownlint-cli2-0.24.1.tgz#811f57fa9abcd946f6ed3d9195b7e9c7cf5ba2e5"
-  integrity sha512-nLhes/MIPJQLm+Gmh+3jQEnwMOaalaN0wfCD2qz1247zNZ7R3r2WDHJB191x4hcy6soKAUTybp1bFK7aJGw/WA==
+markdownlint-cli2@^0.24.2:
+  version "0.24.2"
+  resolved "https://registry.yarnpkg.com/markdownlint-cli2/-/markdownlint-cli2-0.24.2.tgz#2f9dd97a17fd693e86eb1d3894239e27d0731a96"
+  integrity sha512-bgxzhJkgR7t2puRgePHZYVqKzC90etPzxOC+9ZNATjAVJB2zs7EAolfF1inVsrkgYN+ykVIHIxk0WypG2VVLZA==
   dependencies:
     globby "16.2.4"
     js-yaml "5.5.0"
     jsonc-parser "3.3.1"
     jsonpointer "5.0.1"
     markdown-it "15.0.3"
-    markdownlint "0.42.1"
+    markdownlint "0.42.2"
     markdownlint-cli2-formatter-default "0.0.6"
     micromatch "4.0.8"
     smol-toml "1.9.1"
 
-markdownlint@0.42.1:
-  version "0.42.1"
-  resolved "https://registry.yarnpkg.com/markdownlint/-/markdownlint-0.42.1.tgz#c5c16f10235351cf182933ee691039a1944c1012"
-  integrity sha512-Otolm9JX12iO2NG5cetlKfzGygpiLSlHuqXKxoT6HGhN5HtbxprJPicKZqqCQd88qOvUi/TEs3o1AmcYioVscA==
+markdownlint@0.42.2:
+  version "0.42.2"
+  resolved "https://registry.yarnpkg.com/markdownlint/-/markdownlint-0.42.2.tgz#aa7e42df3239d0cf95be12684c4f71d81fa39808"
+  integrity sha512-IhlUBVT+kHBX+u3EjEsQdFB4q0Rl0Hx+JsGsvVkonNut1/n8Kv8yXzwk0pazC9uF35JlwMZ+LxV4CQ9YNAbG8w==
   dependencies:
     micromark "4.0.3"
     micromark-core-commonmark "2.0.4"
